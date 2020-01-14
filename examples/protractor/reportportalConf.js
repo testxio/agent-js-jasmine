@@ -4,5 +4,13 @@ module.exports = {
     launch: "LAUNCH_NAME",
     project: "PROJECT_NAME",
     attachPicturesToLogs: false,
-    tags: ["Ninja","MyCoolTag"]
+    attributes: [
+        {
+            key: "yourKey",
+            value: "yourValue"
+        },
+        {
+            value: "yourValue"
+        }
+    ]
 }

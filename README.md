@@ -22,7 +22,15 @@ var agent = new ReportportalAgent({
     project: "PROJECT_NAME",
     // agent settings
     attachPicturesToLogs: true,
-    tags: ["Ninja","MyCoolTag"]
+    attributes: [
+        {
+            "key": "YourKey",
+            "value": "YourValue"
+        },
+        {
+            "value": "YourValue"
+        },
+    ]
 });
 ```
 3. Add a reporter to Jasmine:
@@ -63,7 +71,15 @@ const agent = new ReportportalAgent({
         launch: "LAUNCH_NAME",
         project: "PROJECT_NAME",
         attachPicturesToLogs: false,
-        tags: ["Ninja","MyCoolTag"]
+        attributes: [
+            {
+                "key": "YourKey",
+                "value": "YourValue"
+            },
+            {
+                "value": "YourValue"
+            },
+        ]
     });
 exports.config = {
     ...
@@ -106,7 +122,15 @@ module.exports = {
     launch: "LAUNCH_NAME",
     project: "PROJECT_NAME",
     attachPicturesToLogs: false,
-    tags: ["Ninja","MyCoolTag"]
+    attributes: [
+        {
+            "key": "YourKey",
+            "value": "YourValue"
+        },
+        {
+            "value": "YourValue"
+        },
+    ]
 }
 ```
 
